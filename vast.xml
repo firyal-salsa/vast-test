@@ -4,13 +4,12 @@
       <AdSystem version="1.0">TestSystem</AdSystem>
       <AdTitle>Sample Ad</AdTitle>
       <AdVerifications>
-        <Verification vendor="com.test">
-          <JavaScriptResource apiFramework="omid">https://example.com/omid.js</JavaScriptResource>
-          <TrackingEvents>
-            <Tracking event="verificationNotExecuted">https://example.com/fail</Tracking>
-          </TrackingEvents>
-        </Verification>
-      </AdVerifications>
+  <Verification vendor="com.example">
+    <JavaScriptResource apiFramework="omid">
+      https://example.com/omid.js
+    </JavaScriptResource>
+  </Verification>
+</AdVerifications>
       <Creatives>
         <Creative sequence="1" id="1">
           <Linear>
