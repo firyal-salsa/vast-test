@@ -1,0 +1,28 @@
+<VAST version="4.2">
+  <Ad id="12345" sequence="1">
+    <InLine>
+      <AdSystem version="1.0">TestSystem</AdSystem>
+      <AdTitle>Sample Ad</AdTitle>
+      <AdVerifications>
+        <Verification vendor="com.test">
+          <JavaScriptResource apiFramework="omid">https://example.com/omid.js</JavaScriptResource>
+          <TrackingEvents>
+            <Tracking event="verificationNotExecuted">https://example.com/fail</Tracking>
+          </TrackingEvents>
+        </Verification>
+      </AdVerifications>
+      <Creatives>
+        <Creative sequence="1" id="1">
+          <Linear>
+            <Duration>00:00:10</Duration>
+            <MediaFiles>
+              <MediaFile delivery="progressive" type="video/mp4" width="640" height="360">
+                https://storage.googleapis.com/interactive-media-ads/media/android.mp4
+              </MediaFile>
+            </MediaFiles>
+          </Linear>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
+</VAST>
